@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    width: 97.7%;
+    height: 3.5rem;
+    background-color: #455258;
+    margin: 10px auto;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+#navbar ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    right: 30px;
+}
+#navbar ul li{
+    margin: 2.5rem;
+    cursor: pointer;
+}
+
+#navbar ul li:nth-child(4){
+    background-color: white;
+    border-radius: 7px;
+    color: black;
+    padding: 0 15px;
+}
+
+#navbar span{
+    position: absolute;
+
+    padding: 2rem;
+    font-weight: 550;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width:989px) and (max-width:1120px){
+    #navbar ul li{
+        margin: 1.7rem;
+    }
+}
+
+.menu-icon img{
+    display: none;
+    position: absolute;
+    height: 40px;
+    right: 4rem;
+    top: 0.6rem;
+    cursor: pointer;
+}
+
+@media (max-width:1009px){
+    .menu-icon img{
+        display: block;
+    }
+
+    #navbar ul{
+        display: none;
+    }
+}
+
+@media (max-width:510px){
+    #navbar span{
+        padding: 1rem;
+        font-size: 23px;
+    }
+
+    .menu-icon img{
+        right: 2rem;
+    }
+
+}
+
+#navbar img{
+    filter: invert(100%);
+}
+
+@media (max-width:1009px){
+    #navbar ul{
+        display: none;
+        flex-direction: column;
+        width: 95%;
+        background-color: #455258;
+        position: absolute;
+        margin: 20px;
+        top: 45px;
+        left: 0px;
+        align-items: flex-end;
+        z-index: unset;
+    }
+
+    #navbar ul.active{
+        display: flex;
+    }
+
+    #navbar ul li{
+        margin: 30px;
+    }
+
+    #navbar ul #button{
+        width: 8rem;
+        text-align: center;
+        
+    }
+    
+}
+
+#navbar ul li:active{
+    color: rgb(228, 199, 255);
+}
+
+section:first-child{
+    display: flex;
+    justify-content: center;
+}
+
+#home{
+    display: flex;
+    width: 94%;
+    /* height: 70%; */
+    background-color: #f1f1f1;
+    box-shadow: 2px 3px 6px grey;
+    margin: 15px auto;
+    flex-direction: row-reverse;
+    font-family: Rubik;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+#home button{
+    height: 2.4rem;
+    width: 14rem;
+    display: block;
+    margin: auto;
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    background-color: #EBF7FF;
+    padding: 3px 7px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#title-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 5rem;
+    height: 470px;
+    justify-content: space-evenly;
+}
+
+#title-profile img{
+    height: 21rem;
+    overflow: hidden;
+    display: block;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+#title-profile .down-resume span{
+    display: inline-block;
+}
+
+#title-profile .down-resume{
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 2rem;
+}
+
+#title-profile .down-resume img{
+    max-height: 22px;
+}
+
+#title-head{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 470px;
+}
+
+#title-head .sen{
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+    margin: 5px 0;
+}
+
+#title-head .second-sen{
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(50deg, #779fc5, #343739);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#title-head .first-sen{
+    margin: 0 5px;
+
+}
+
+#title-head .third-sen{
+    margin-bottom: 8px;
+}
+
+.connect-home{
+    position: relative;
+    /* margin: 2rem; */
+}
+
+
+#parahead{
+    height: 17rem;
+    padding-top: 4rem;
+}
+
+@media (max-width:1088px){
+    #home{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #title-head, #title-profile{
+        margin: 10px 30px;
+    }
+
+    #parahead{
+        padding: 30px 0;
+    }
+}
