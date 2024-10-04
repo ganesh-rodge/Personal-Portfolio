@@ -169,6 +169,11 @@ section:first-child{
     padding: 3px 7px;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+#home button:hover{
+    box-shadow: 2px 2px 4px grey;
 }
 
 #title-profile{
@@ -279,6 +284,7 @@ section:nth-child(2){
     display: flex;
     justify-content: left;
     border-radius:30px;
+    cursor: pointer;
 }
 
 
@@ -333,9 +339,9 @@ section:nth-child(2){
 }
 
 .apj-quote{
-    font-size: 30px;
+    font-size: 34px;
     font-weight: bolder;
-    background: linear-gradient(50deg, #b2c0cd, #c6cfd4);
+    background: linear-gradient(50deg, #a2bed8, #c6cfd4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -379,6 +385,7 @@ section:nth-child(2){
     display: block;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 @media (max-width:1000px){
@@ -518,11 +525,18 @@ section:nth-child(2){
     width: 20px;
 }
 
+#project-2 .head-project{
+    color: black;
+    cursor:default;
+}
+
+
 .head-project{
     font-size: 24px;
     font-weight: 450;
     color: rgb(95, 95, 255);
     margin: 15px 0px;
+    cursor: pointer;
 }
 
 .info-project{
@@ -648,10 +662,19 @@ textarea{
     font-weight: 450;
     border-radius: 5px;
     border: none;
-    background-color: rgb(67, 67, 104);
+    background-color: rgb(153, 155, 187);
     color: white;
-    display: block;
+    display: flex;
     margin: 5px auto;
+    /* padding: 10px; */
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.message-info .submit input:active{
+    background-color: rgb(172, 172, 220);
 }
 
 .message-info div:nth-child(5){
