@@ -302,7 +302,7 @@ section:nth-child(2){
     flex-direction: column;
     margin: 40px;
     width: 43%;
-    font-size: 30px;
+    font-size: 25px;
     text-align: justify;
     font-weight: 400;
     padding: 10px;
@@ -395,7 +395,7 @@ section:nth-child(2){
     #first-block, .second-block{
         width: 89%;
         margin: 0px auto;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     
@@ -409,4 +409,313 @@ section:nth-child(2){
         text-align: center;
     }
 
+}
+
+.skillhub{
+    margin: 15px;
+    font-family: Rubik;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillhub img{
+    height: 42px;
+}
+
+#skill-head{
+    margin: 1%;
+    margin: 20px 15px 0px 0px;
+    padding: 1% 2.5%;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Poppins;
+}
+
+#full-stack{
+    border: 2px solid;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#full-stack h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 20px 0px 0px 0px;
+}
+
+#full-stack .logo{
+    display: flex;
+    margin: 30px 50px 10px 0px;
+    padding: 0px 25px;
+    width: 24%;
+    justify-content: left;
+}
+
+#full-stack .name-progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 8px;
+    font-weight: 500;
+}
+
+#full-stack .skill-name{
+    font-size: 18px;
+}
+
+.skills{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid;
+    width: 95%;
+}
+
+.projecthub{
+    margin: 30px auto;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: rubik;
+}
+
+.projecthub h2{
+    font-family: poppins;
+    font-size: 30px;
+}
+
+.projects{
+    width: 97%;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project{
+    width: 25rem;
+    margin: 20px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img{
+    width: 100%;
+    height: 240px;
+}
+
+.head-project img{
+    height: 20px;
+    width: 20px;
+}
+
+.head-project{
+    font-size: 24px;
+    font-weight: 450;
+    color: rgb(95, 95, 255);
+    margin: 15px 0px;
+}
+
+.info-project{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-me{
+    background-color: rgb(255, 253, 253);
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px 0.3px gray;
+}
+
+.contact-me h1{
+    font-family: Poppins;
+    font-size: 35px;
+    margin: 0px 30px;
+    padding: 20px 20px;
+    margin-top: 40px;
+    
+}
+
+.connect-main{
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Rubik;
+    justify-content: space-evenly;
+}
+
+.contact-info{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    justify-content: space-evenly;
+    align-items: left;
+    margin: 20px 20px;
+}
+
+.contact-me h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #28434d;
+    /* margin: 10px ; */
+}
+
+.message-info{
+    width: 35rem;
+    margin: 20px;
+    /* font-size: 20px; */
+    font-weight: 450;
+}
+
+.mail-number img{
+    height: 20px;
+    margin-right: 20px;
+}
+
+.mail-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    font-weight: 450;
+    text-align: center;
+}
+
+#mail, #phone{
+    display: flex;
+    font-size: 25px;
+    /* flex-wrap: wrap; */
+}
+
+@media (max-width:442px){
+    #mail, #phone{
+        font-size: 20px;
+    }
+}
+
+label{
+    font-size: 22px;
+}
+
+
+.message-info input, textarea{
+    height: 30px;
+    width: 18rem;
+    border: 0.001px solid ;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 5px;
+}
+
+.message-info input:focus{
+    outline: none;
+
+}
+
+
+textarea{
+    width: 18rem;
+    max-width: 18rem;
+    min-height: 5rem;
+    min-width: 18rem;
+}
+
+.message-info div{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0px;
+    flex-wrap: wrap;
+}
+
+.message-info .submit input{
+    width: 9rem;
+    font-size: 25px;
+    font-weight: 450;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(67, 67, 104);
+    color: white;
+    display: block;
+    margin: 5px auto;
+}
+
+.message-info div:nth-child(5){
+    margin: 10px auto;
+}
+
+.skills .logo:nth-child(4) img{
+    height: 42px;
+    width: 42px;
+}
+
+footer{
+    width: 100%;
+    font-family: poppins;
+    background-color: black;
+    color: white;
+    margin: 15px 0px 0px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote-box{
+    margin: 30px;
+    font-size: 40px;
+
+}
+
+.quote-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    align-items: center;
+}
+
+
+.made-by{
+    font-size: 22px;
+    margin: 15px;
+}
+
+@media(max-width:500px){
+    .quote-link{
+        width: 90%;
+    }
+}
+
+
+.link-box .icon-circle{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-box .block-circles{
+    display: flex;
+    flex-wrap: wrap;
 }
