@@ -14,12 +14,12 @@
 </head>
 <body>
     <nav id= "navbar">
-        <span>{"Ganesh Rodge"}</span>
+        <span><a href="index.html">{"Ganesh Rodge"}</a></span>
         <ul id="navlinks">
-            <li>About</li>
-            <li>Experience</li>
-            <li>Contact</li>
-            <li id="button">Resume</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li id="button"><a href="Resources/Ganesh_Rodge_Resume.pdf" download="Ganesh_Rodge_Resume" id="download-resume">Resume</a></li>
         </ul>
         <div class="menu-icon" onclick="toggleMenu()"><img src="Resources/menu.svg" alt=""></div>
     </nav>
@@ -28,9 +28,13 @@
         <div id="home">
             <div id="title-profile">
                 <img src="Resources/generate_a_cartoon_character_image_of_a_20_year_old_college_teen_boy_coding_on_his_laptop_the_chara_qounc92o3sfeielh1unm_3.png" alt="">
-                <button class="down-resume"> 
-                    <img src="Resources/download_icon.png" alt="" > <span>Download Resume</span>
-                </button>
+
+                <a href="Resources/Ganesh_Rodge_Resume.pdf" download="Ganesh_Rodge_Resume">
+                    <button class="down-resume"> 
+                        <img src="Resources/download_icon.png" alt="" > <span>Download Resume</span>
+                    </button>
+                </a>
+                
             </div>
 
             <div id="title-head">
@@ -41,7 +45,8 @@
                 <div class="fourth-sen sen">and currently I'm shaping</div>
                 <div class="fifth-sen sen">ideas into real Software...</div>
                 </div>
-                <button class="connect-home">Connect With Me</button>
+                
+                <button class="connect-home"><a href="#contact">Connect With Me</a></button>
             </div>
 
         </div>
@@ -52,38 +57,41 @@
             <div id="about-div">
                 <div id="first-block">
                     <h1>About Me ?</h1>
-                    <div class="highlight-button">
+                    <div class="highlight-button" onclick="toggleHighlight()">
                         <div class="circle"></div>
                     </div>
                     <div class="about-para">
                         <p>Hi,</p>
                         <p>
-                            <span class="highlight">I am </span>
+                            <span class="high">I am </span>
                             Ganesh Rodge
-                            <span class="highlight">,originally from Latur, where I completed my</span>
+                            <span class="high">,originally from Latur, where I completed my</span>
                             10th grade with 95.40%
-                            <span class="highlight"> before and then completed my </span>
+                            <span class="high"> before and then completed my </span>
                             Diploma in Computer Engineering with first class distinction
-                            <span class="highlight">and currently I am a passionate </span>
+                            <span class="high">and currently I am a passionate </span>
                             third year Computer Engineering Student
-                            <span class="highlight"> at SPPU.</span>  
+                            <span class="high"> at SPPU.</span>  
                         </p>
                     </div>
                 </div>
                 <div class="second-block">
                     <div class="block-circles">
-                        <div class="icon-circle"><img src="Resources/linked-in.png" alt=""></div>
-                        <div class="icon-circle"><img src="Resources/github.png" alt=""></div>
-                        <div class="icon-circle"><img src="Resources/leetcode.svg" alt=""></div>
+                        <a href="https://www.linkedin.com/in/ganesh-rodge/" target="_blank"><div class="icon-circle"><img src="Resources/linked-in.png" alt=""></div></a>
+
+                        <a href="https://github.com/ganesh-rodge" target="_blank"><div class="icon-circle"><img src="Resources/github-logo.png" alt=""></div></a>
+                    
+                        <a href="https://leetcode.com/u/ganesh_r_05/" target="_blank"><div class="icon-circle"><img src="Resources/leetcode.svg" alt=""></div></a>
                     </div>
                     <div class="about-para">
-                        <span class="highlight">I am diving into the </span>
-                        world of development 
-                        <span class="highlight">and </span>
+                        <span class="high">I am diving into the world of</span>
+                        development 
+                        <span class="high">and </span>
                         problem solving
-                        <span class="highlight">. I enjoy exploring new trends,</span>
+                        <span class="high">. I enjoy exploring new trends,</span>
                         working on personal projects
-                        <span class="highlight">, and continuously expanding my skills set</span>
+                        <span class="high">, and continuously</span>
+                        expanding my skills set
                     </div>
                 </div>
                 
@@ -93,6 +101,7 @@
     </section>
 
     <section>
+        <div id="experience">
         <h1 id="skill-head">The Journey So Far...</h1>
         <div class="skillhub">
             <div id="full-stack">
@@ -305,7 +314,7 @@
             <div class="projects">
                 <div id="project-1" class="project">
                     <img src="Resources/profession-advisor.jpeg" alt="">
-                    <div class="head-project">Professions Advisor <img src="Resources/link-logo.png" alt=""></div>
+                    <div class="head-project"><a href="https://github.com/ganesh-rodge/Professions-Advisor" target="_blank">Professions Advisor <img src="Resources/link-logo.png" alt=""></a></div>
                     <div class="info-project">Functional Website to help school and high-school students to choose their desired field and profession. Show different roadmaps for future. AI based chatbot assistance.</div>
                 </div>
 
@@ -317,7 +326,7 @@
                     
                 <div id="project-3" class="project">
                     <img src="Resources/currency-logo.png" alt="">
-                    <div class="head-project">Currency Converter <img src="Resources/link-logo.png" alt=""></div>
+                    <div class="head-project"><a href="https://github.com/ganesh-rodge/Currency-Converter-Java" target="_blank">Currency Converter <img src="Resources/link-logo.png" alt=""></a></div>
                     <div class="info-project">Desktop Application made using core Java and Java Swing components. Functional to convert input currency and value to selected currency and value.</div>
                 </div>
             </div>
@@ -326,11 +335,13 @@
         </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section>
+        <div id="contact">
         <div class="contact-me">
-            <h1>Get in touch with me...</h1>
+            <h1>For more details</h1>
             <div class="connect-main">
                 <div class="contact-info">
                     <h2>Connect With me</h2>
@@ -342,22 +353,23 @@
 
                 <div class="message-info">
                     <h2>send me a message !</h2>
-                    <form action="">
+                    <form action="https://formspree.io/f/mdkonyyg"
+                    method="POST">
                         <div id="name-input">
                             <label for="name">Name:</label>
-                            <input type="text" name="" id="">
+                            <input type="text" name="name" id="" required>
                         </div>
                         <div class="number-input">
                             <label for="number">Number:</label>
-                            <input type="number">
+                            <input type="number" name="number" required>
                         </div>
                         <div class="email-input">
                             <label for="email">E-mail:</label>
-                            <input type="email" name="" id="">
+                            <input type="email" name="email" id="" required>
                         </div>
                         <div class="message">
                             <label for="message">Message:</label>
-                            <textarea name="" id=""></textarea>
+                            <textarea name="message" id="" required></textarea>
                         </div>
                         <div class="submit">
                             <input type="submit">
@@ -366,6 +378,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <footer>
@@ -378,17 +391,22 @@
 
             <div class="link-box">
                 <div class="block-circles">
-                    <div class="icon-circle"><img src="Resources/linked-in.png" alt=""></div>
-                    <div class="icon-circle"><img src="Resources/twitter-con.png" alt=""></div>
-                    <div class="icon-circle"><img src="Resources/insta-icon.png" alt=""></div>
-                    <div class="icon-circle"><img src="Resources/github-logo.png" alt=""></div>
-                    <div class="icon-circle"><img src="Resources/leetcode.svg" alt=""></div>
+                    <a href="https://www.linkedin.com/in/ganesh-rodge/" target="_blank"><div class="icon-circle"><img src="Resources/linked-in.png" alt=""></div></a>
+
+                    <a href="https://x.com/ganeshro_" target="_blank"><div class="icon-circle"><img src="Resources/twitter-con.png" alt=""></div></a>
+
+                    <a href="https://www.instagram.com/ganeshro_/" target="_blank"><div class="icon-circle"><img src="Resources/insta-icon.png" alt=""></div></a>
+
+                    <a href="https://github.com/ganesh-rodge" target="_blank"><div class="icon-circle"><img src="Resources/github-logo.png" alt=""></div></a>
+                    
+                    <a href="https://leetcode.com/u/ganesh_r_05/" target="_blank"><div class="icon-circle"><img src="Resources/leetcode.svg" alt=""></div></a>
+                    
                 </div>
             </div>
     
         </div>
 
-        <div class="made-by">Made By Ganesh Rodge. | All Rights Reserved.</div>
+        <div class="made-by">Made By Ganesh Rodge | All Rights Reserved.</div>
         
     </footer>
 </body>

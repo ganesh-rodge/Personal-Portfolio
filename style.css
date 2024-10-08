@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #navbar{
     width: 97.7%;
     height: 3.5rem;
@@ -20,6 +24,11 @@
 
 }
 
+#navbar span a{
+    color: white;
+    text-decoration: none;
+}
+
 #navbar ul{
     position: absolute;
     list-style: none;
@@ -29,6 +38,15 @@
 #navbar ul li{
     margin: 2.5rem;
     cursor: pointer;
+}
+
+#navbar ul a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li:nth-child(4) a {
+    color: black;
 }
 
 #navbar ul li:nth-child(4){
@@ -127,6 +145,8 @@
     color: rgb(228, 199, 255);
 }
 
+
+
 section:first-child{
     display: flex;
     justify-content: center;
@@ -172,6 +192,11 @@ section:first-child{
     cursor: pointer;
 }
 
+#title-head button a{
+    color: black;
+    text-decoration: none;
+}
+
 #home button:hover{
     box-shadow: 2px 2px 4px grey;
 }
@@ -184,6 +209,7 @@ section:first-child{
     height: 470px;
     justify-content: space-evenly;
 }
+
 
 #title-profile img{
     height: 21rem;
@@ -198,12 +224,17 @@ section:first-child{
 }
 
 #title-profile .down-resume{
-    width: 70%;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: left;
     align-items: center;
-    margin: 2rem;
+    /* margin: 2rem; */
+}
+
+#title-profile a{
+    text-decoration: none ;
+
 }
 
 #title-profile .down-resume img{
@@ -287,6 +318,11 @@ section:nth-child(2){
     cursor: pointer;
 }
 
+.highlight-toggle{
+    justify-content: right;
+    background-color: rgb(241, 241, 241);
+}
+
 
 .highlight-button .circle{
     position: absolute;
@@ -297,10 +333,14 @@ section:nth-child(2){
     margin: 5px;
 }
 
+.highlight-button .changeCircle{
+    background-color: rgb(170, 170, 170);
+}
+
 .about-para .highlight{
-    /* text-decoration: line-through;
-    color: white;
-    font-weight: 300; */
+    text-decoration: line-through;
+    color: rgb(97, 97, 97);
+    font-weight: 300;
 }
 
 #first-block, .second-block{
@@ -530,6 +570,10 @@ section:nth-child(2){
     cursor:default;
 }
 
+.project a{
+    text-decoration: none;
+    color: rgb(95, 95, 255);
+}
 
 .head-project{
     font-size: 24px;
@@ -578,13 +622,14 @@ section:nth-child(2){
     height: 280px;
     justify-content: space-evenly;
     align-items: left;
-    margin: 20px 20px;
+    margin: 20px 2px;
 }
 
 .contact-me h2{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 550;
     color: #28434d;
+    margin-left: 0px;
     /* margin: 10px ; */
 }
 
@@ -604,7 +649,7 @@ section:nth-child(2){
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 80px;
+    height: 160px;
     font-weight: 450;
     text-align: center;
 }
@@ -612,6 +657,10 @@ section:nth-child(2){
 #mail, #phone{
     display: flex;
     font-size: 25px;
+    border: 2px solid ;
+    padding: 10px 5px;
+    justify-content: center;
+    /* margin: 20px; */
     /* flex-wrap: wrap; */
 }
 
@@ -647,6 +696,8 @@ textarea{
     max-width: 18rem;
     min-height: 5rem;
     min-width: 18rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
 }
 
 .message-info div{
@@ -662,7 +713,7 @@ textarea{
     font-weight: 450;
     border-radius: 5px;
     border: none;
-    background-color: rgb(153, 155, 187);
+    background-color: rgb(98, 102, 151);
     color: white;
     display: flex;
     margin: 5px auto;
@@ -674,7 +725,7 @@ textarea{
 }
 
 .message-info .submit input:active{
-    background-color: rgb(172, 172, 220);
+    background-color: rgb(28, 25, 68);
 }
 
 .message-info div:nth-child(5){
@@ -722,8 +773,17 @@ footer{
 @media(max-width:500px){
     .quote-link{
         width: 90%;
+        margin: 20px;
     }
+
+    .contact-me h1{
+        padding: 0px;
+        margin: 10px;
+    }
+
+    
 }
+
 
 
 .link-box .icon-circle{
@@ -742,3 +802,19 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
+
+@media(max-width:571px){
+    .link-box .block-circles{
+        margin: 10px;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .link-box .icon-circle{
+        margin: 8px;
+        height: 45px;
+        width: 45px;
+    }
+    
+}
+
