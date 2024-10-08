@@ -156,7 +156,7 @@ section:first-child{
     display: flex;
     width: 94%;
     /* height: 70%; */
-    background-color: #f1f1f1;
+    background-color: #fcfcff;
     box-shadow: 2px 3px 6px 2px grey;
     margin: 15px auto;
     flex-direction: row-reverse;
@@ -818,3 +818,56 @@ footer{
     
 }
 
+/* Initial state - skills are offscreen */
+.skillhub .logo {
+    opacity: 0;
+    transform: translateY(100px); /* Move elements downward */
+    transition: all 0.6s ease-out;
+}
+
+/* Active state - when the skills are in view */
+.skillhub .logo.active {
+    opacity: 1;
+    transform: translateY(0); /* Move elements to their normal position */
+}
+
+/* Base Styles */
+#title-head {
+    text-align: center;
+}
+
+.sen {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.2s ease-out;
+}
+
+.connect-home {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid #000;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+.connect-home a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Animation active state */
+.sen.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.connect-home:hover {
+    background-color: #000;
+    color: white;
+}
+
+.connect-home:hover a {
+    color: white;
+}
